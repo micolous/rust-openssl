@@ -316,8 +316,8 @@ jobs:
               mkdir build
               cd build
 
-              echo "set(CMAKE_SYSTEM_NAME $os_name)" > toolchain.cmake
-              if [[ "$os_name" == "Windows" ]]; then
+              echo "set(CMAKE_SYSTEM_NAME $OS_NAME)" > toolchain.cmake
+              if [[ "$OS_NAME" == "Windows" ]]; then
                 echo "set(WIN32 True)" >> toolchain.cmake
               fi
               echo "set(CMAKE_SYSTEM_PROCESSOR $cpu)" >> toolchain.cmake
